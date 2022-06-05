@@ -1,0 +1,41 @@
+*{
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+header{
+    background-color: #1a000d ;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo{
+    text-decoration: none;
+    color: #ff0080;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.navigation a{
+    color: #ff0080;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+
+
+.navigation a:hover{
+    color: #ff80bf ;
+}
