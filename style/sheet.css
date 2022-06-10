@@ -369,16 +369,15 @@ section{
 
 .contact{
     background-color: #1a000d;
+    
 }
 
 .contact h2{
     color: #FF0080;
     margin-bottom: 20px;
-
 }
 
 .contactInfo{
-  
     display: flex;
     flex-direction: column;
 }
@@ -401,11 +400,66 @@ section{
 .contactInfo .box .text{
     display: flex;
     margin: 0 0  20px 20px;
-
-
     color: #E2D3DA;
     flex-direction: column;
 }
+
+.contact-form{
+    width: 40%;
+    padding: 20px;
+    background-color: #E2D3DA;
+ }
+
+ .input-box{
+     position: relative;
+     width: 100%;
+     margin-top: 10px;
+ }
+
+ .contact-content{
+     margin-bottom: 30px;
+ }
+
+ .input-box input, .input-box textarea{
+     background-color:#E2D3DA;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #1a000d ;
+    outline: none;
+    resize: none;
+}
+
+.input-box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 1em;
+    margin: 10px 0;
+    pointer-events: none;
+    color: #745a67;
+}
+
+.input-box input:focus ~ span,
+.input-box input:valid ~ span,
+.input-box textarea:focus ~ span,
+.input-box textarea:valid ~ span{
+
+    color: #411d2f;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.input-box input[type="submit"]{
+    width: 100px;
+    background-color: #5a3548;
+    color: #E2D3DA;
+    border: none;
+}
+
+
 
 
 .footer{
@@ -423,6 +477,8 @@ section{
     color: #FF0080;
 
 }
+
+
 
 
 
@@ -496,6 +552,12 @@ section{
         font-size: 1.4em;
         padding-right: 5px;
     }
+
+  
+    
+    .contact-form{
+        width: 80%;
+     }
 
 
 }
